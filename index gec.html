@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEC Bhojpur PYQ Hub</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      color:white;
+    }
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,0.4);
+      backdrop-filter: blur(8px);
+      position:sticky;
+      top:0;
+    }
+
+    nav h1{
+      font-size:32px;
+      color:#00ffd5;
+      text-shadow:0 0 10px cyan;
+    }
+
+    nav ul{
+      display:flex;
+      gap:25px;
+      list-style:none;
+    }
+
+    nav ul li{
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    nav ul li:hover{
+      color:#00ffd5;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      flex-direction:column;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:65px;
+      margin-bottom:20px;
+      text-shadow:0 0 15px cyan;
+    }
+
+    .hero p{
+      max-width:700px;
+      font-size:20px;
+      line-height:1.6;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      border:none;
+      border-radius:40px;
+      background:#00ffd5;
+      color:black;
+      font-size:18px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.4s;
+      box-shadow:0 0 20px cyan;
+    }
+
+    .btn:hover{
+      transform:scale(1.08);
+      background:white;
+    }
+
+    .subjects{
+      padding:80px 8%;
+    }
+
+    .subjects h2{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:45px;
+      color:#00ffd5;
+    }
+
+    .card-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(8px);
+      border-radius:20px;
+      padding:30px;
+      transition:0.4s;
+      border:1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 20px cyan;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#00ffd5;
+      font-size:28px;
+    }
+
+    .card p{
+      margin-bottom:20px;
+      line-height:1.5;
+    }
+
+    .download{
+      text-decoration:none;
+      color:black;
+      background:#00ffd5;
+      padding:10px 20px;
+      border-radius:30px;
+      display:inline-block;
+      font-weight:bold;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:rgba(0,0,0,0.5);
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h2{
+        font-size:40px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        gap:15px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>[Bihar Engineering University]</h1>
+
+    <ul>
+      <li>Home</li>
+      <li>Subjects</li>
+      <li>Notes</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <h2>Previous Year Question Hub</h2>
+
+    <p>
+      Download all semester PYQs of GEC Bhojpur in one place.
+      Electrical, Mechanical, Civil, CSE and all branches available.
+    </p>
+
+    <button class="btn">Explore PYQs</button>
+
+  </section>
+
+  <section class="subjects">
+
+    <h2>Popular Subjects</h2>
+
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Electrical Machines</h3>
+        <p>Previous year questions with solutions for EE students.</p>
+        <a href="#" class="download">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>EMF</h3>
+        <p>Electromagnetic Field PYQs semester wise.</p>
+        <a href="#" class="download">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>Power System</h3>
+        <p>Important university questions and notes.</p>
+        <a href="#" class="download">Download</a>
+      </div>
+
+      <div class="card">
+        <h3>Engineering Mechanics</h3>
+        <p>All important numerical and derivation questions.</p>
+        <a href="#" class="download">Download</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 GEC Bhojpur PYQ Website | Made by  Himanshu Raj
+  </footer>
+
+</body>
+</html>
